@@ -6,7 +6,10 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="flex-grow">
+      <main className="flex-grow flex flex-col items-center justify-center text-center">
+        <h1 className="mt-12 text-5xl font-extrabold mb-8 text-gray-800">
+          Create encouraging connections with ease
+        </h1>
         <HeroSection />
         <FeaturesSection />
         <PraiseSection />
@@ -17,22 +20,30 @@ export default function Home() {
     </div>
   )
 }
+// #A5B6BC
 
 function HeroSection() {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-    
       <div className="relative z-10 text-center text-white">
-        <h1 className="text-5xl font-bold mb-4">Welcome to Praisely</h1>
-        <p className="text-xl mb-8">Automating praise to build stronger school relationships</p>
         <div className="bg-white p-8 rounded-lg shadow-lg transform rotate-3 hover:rotate-0 transition-transform duration-300">
-          <Image
-            src="/images/front-pc.png"
-            alt="Praisely postcard"
-            width={600}
-            height={200}
-            className="rounded"
-          />
+          
+          <div className="flex space-x-4">
+            <Image
+              src="/images/postcard.png"
+              alt="Praisely postcard"
+              width={600}
+              height={200}
+              className="rounded"
+            />
+            <Image
+              src="/images/postcard-back.png"
+              alt="Praisely postcard"
+              width={600}
+              height={200}
+              className="rounded"
+            />
+          </div>
         </div>
         {/* <Button className="mt-8 bg-yellow-400 text-black hover:bg-yellow-500">Get Started</Button> */}
       </div>
