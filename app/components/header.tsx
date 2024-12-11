@@ -7,8 +7,6 @@ export default function Header() {
         <Link href="/" className="text-2xl font-bold text-yellow-400">Praisely</Link>
         <nav>
           <ul className="flex space-x-4">
-            <li><Link href="#features" className="hover:text-yellow-400">Features</Link></li>
-            <li><Link href="#testimonials" className="hover:text-yellow-400">Testimonials</Link></li>
             <li><Link href="#contact" className="hover:text-yellow-400">Contact</Link></li>
           </ul>
         </nav>

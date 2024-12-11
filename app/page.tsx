@@ -9,6 +9,7 @@ export default function Home() {
       <main className="flex-grow">
         <HeroSection />
         <FeaturesSection />
+        <PraiseSection />
         <TestimonialsSection />
         <CtaSection />
       </main>
@@ -41,9 +42,9 @@ function HeroSection() {
 
 function FeaturesSection() {
   const features = [
-    { title: "Automated Praise", description: "Send personalized postcards automatically" },
-    { title: "Strengthen Relationships", description: "Build stronger connections with students and parents" },
-    { title: "Easy Integration", description: "Seamlessly integrate with your existing school systems" },
+    { title: "So fast and easy", description: "Send personalised postcards quickly and easily with our streamline app." },
+    { title: "Tailored to your school and your students", description: "Personalised science based praise messaging based on your school values and ethos." },
+    { title: "Strengthen Relationships", description: "Build real moments between school and parents that can be remembered forever" },
   ]
 
   return (
@@ -58,6 +59,32 @@ function FeaturesSection() {
             </div>
           ))}
         </div>
+      </div>
+    </section>
+  )
+}
+
+function PraiseSection() {
+  const features = [
+    {  description: "Congratulations on your outstanding performance in English class! Your exemplary behavior and unwavering dedication to mastering grammar have not gone unnoticed. The consistent effort you put into every assignment is truly commendable. Your hard work has paid off, as evidenced by your remarkable progress and the high-quality work you produce. Keep up the fantastic job, and know that your achievements are worthy of celebration!" },
+    { description: "I have a big grin on my face because of your amazing effort in English! You came to class ready to learn every single day. It was awesome to see you focusing, asking smart questions, and helping your friends. And your grammar has gotten so good! All those exercises and games we did really helped you learn. I'm so impressed by how much you've grown!" },
+    {  description: "Your success in English class is a testament to your exceptional character and work ethic. Your behavior sets a positive example for your peers, fostering a respectful and productive learning environment. The dedication you demonstrate in mastering grammar is truly impressive. Your meticulously crafted assignments showcase your deep understanding of the subject. Your efforts have not only improved your own skills but have also contributed to the overall success of the class." },
+  ]
+
+  return (
+    <section className="py-16 bg-gray-100">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-12">This is what our praise messages look like?</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {features.map((feature, index) => (
+            <div key={index} className="bg-white p-6 rounded-lg shadow-md">
+              <p>{feature.description}</p>
+            </div>
+          ))}
+        </div>
+        <br/>
+        <h3 className="text-2xl font-bold text-center mb-12">You can also add specific praise messages for your students and we will weave them into our praise message.
+        </h3>
       </div>
     </section>
   )

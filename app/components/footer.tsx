@@ -14,18 +14,11 @@ export default function Footer() {
             <ul className="space-y-2">
               <li><Link href="#" className="hover:text-yellow-400">About Us</Link></li>
               <li><Link href="#" className="hover:text-yellow-400">Features</Link></li>
-              <li><Link href="#" className="hover:text-yellow-400">Pricing</Link></li>
+              {/* <li><Link href="#" className="hover:text-yellow-400">Pricing</Link></li> */}
               <li><Link href="#" className="hover:text-yellow-400">Contact</Link></li>
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4">Connect With Us</h3>
-            <ul className="space-y-2">
-              <li><Link href="#" className="hover:text-yellow-400">Twitter</Link></li>
-              <li><Link href="#" className="hover:text-yellow-400">Facebook</Link></li>
-              <li><Link href="#" className="hover:text-yellow-400">LinkedIn</Link></li>
-              <li><Link href="#" className="hover:text-yellow-400">Instagram</Link></li>
-            </ul>
           </div>
         </div>
         <div className="mt-8 text-center">
