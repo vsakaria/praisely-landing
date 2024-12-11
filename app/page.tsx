@@ -30,7 +30,7 @@ function HeroSection() {
           
           <div className="flex space-x-4">
             <Image
-              src="/images/postcard.png"
+              src="/images/postcard-front.png"
               alt="Praisely postcard"
               width={600}
               height={200}
