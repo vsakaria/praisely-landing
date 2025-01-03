@@ -1,17 +1,19 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
+import { getStorage } from "firebase/storage";
+
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCNH5c975pjgFhKRRQlTqLxiGPk1b4zGj0",
-  authDomain: "praisely-a0353.firebaseapp.com",
-  projectId: "praisely-a0353",
-  storageBucket: "praisely-a0353.firebasestorage.app",
-  messagingSenderId: "939148563473",
-  appId: "1:939148563473:web:1b11eec83931ffdc3bcdb0",
-  measurementId: "G-94RJD8Z83T"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
 };
 
 console.log("\x1b[1m\x1b[32mFirebase configuration loaded\x1b[0m");
@@ -19,3 +21,5 @@ console.log("\x1b[1m\x1b[32mFirebase configuration loaded\x1b[0m");
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
+export const storage = getStorage(app);
+
